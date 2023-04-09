@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><nobr>My Extension</nobr></title>
+    <script src="./popup.js"></script>
+  </head>
+  <body>
+    <h1><nobr>My Extension</nobr></h1>
+    <div id="signupScreen">
+      <p>Please provide a password to secure your secret:</p>
+      <input type="password" id="passwordInput">
+      <p>Please confirm your password:</p>
+      <input type="password" id="confirmPasswordInput">
+      <button id="confirmButton" style="margin: 10px;">Confirm</button>
+    </div>
+    <div id="loginScreen">
+      <p>Please type password:</p>
+      <input type="password" id="loginPasswordInput">
+      <button id="loginButton" style="margin: 10px;">Login</button>
+      <button id="resetButton" style="margin: 10px;">Reset</button>
+    </div>
+    <div id="secretScreen" style="display: none;">
+      <p>Your secret is:</p>
+      <p id="secret"></p>
+      <button id="regenerateButton" style="margin: 10px;">Regenerate Secret</button>
+      <button id="logOutButton" style="margin: 10px;">Log Out</button>
+    </div>
+  </body>
+</html>
